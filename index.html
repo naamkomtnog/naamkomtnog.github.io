@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://kit.fontawesome.com/4ba956b347.js" crossorigin="anonymous"></script>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Design & Development</title>
+	<title>Naam Komt Nog - Gebruiksvriendelijke Digitale Oplossingen</title>
 
 	<style>
 
@@ -37,7 +39,7 @@
 		}
 
 		a {
-			color:#1D1D1F;
+			color:var(--blue);
 			cursor: target;
 			text-decoration: none;
 
@@ -84,7 +86,7 @@
 
 		header {
 			position:fixed; 
-			padding:1.5rem 3rem;
+			padding:1.5rem 2rem;
 			z-index:1;
 
 		}
@@ -135,7 +137,7 @@
 			text-align:left;
 		}
 		h3 {
-			font-size:4.5rem;
+			font-size:1.8rem;
 		}
 		h2 {
 			font-size:9rem;
@@ -143,7 +145,7 @@
 
 		h4 {
 
-			font-size:3rem;
+			font-size:1.6rem;
 			margin:0;
 
 		}
@@ -151,9 +153,9 @@
 		.grid {
 			margin-top:10rem;
 			display:grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
 			align-items:center;
-			gap:2.5rem;
+			gap:4rem 2.5rem;
 			max-width:50rem;
 		}
 		.grid img {
@@ -161,6 +163,7 @@
 			max-width:100%;
 			filter:grayscale(1);
 			margin:0 auto;
+			max-width: 9rem;
 		}
 		header {
 			display: flex;
@@ -183,7 +186,7 @@
 
 		h1 {
 			font-size: 2.4rem;
-			margin-bottom: 4rem;
+			margin-bottom: 2rem;
 			font-weight: 300;
 			letter-spacing: .07rem;
 		}
@@ -194,18 +197,68 @@
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+			margin-top: 3rem;
+		}
+		.keuzes .container {
+			display: flex;
 		}
 
 
 		.keuzes a h2 {
 			margin: 0;
-			margin-top: 2rem;
+			margin-top: 1rem;
 			margin-bottom: .5rem;
-			font-size: 2.2rem;
+			font-size: 2rem;
 		}
 		.keuzes a p {
 			margin: 0;
 		
+		}
+
+		.researchintro {
+			background: #2b2b2b;
+			color: #fff;
+			padding: 2rem;
+			display: flex;
+
+			flex-direction: column;
+		}
+
+		.videocontainer {
+			margin: 0 -2rem;
+			width: calc(100% + 4rem);
+			position: relative;
+
+		}
+
+		.videocontainer h3 {
+			position: absolute;
+			color: var(--blue);
+			width: 100%;
+			z-index: 999;
+			text-align: center;
+			top: 50%;
+			transform: translateY(-100%);
+		}
+
+		video {
+			opacity: 0.5;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+			overflow: hidden;
+		}
+
+		.videocontainer:before {
+			position: absolute;
+			bottom: .5rem;
+			right: 0;
+			top: 0;
+			left: 0;
+			background: blue;
+			z-index: 99;
+			opacity: 0.4;
 		}
 
 
@@ -229,7 +282,11 @@
 				flex-direction:column;
 			}
 			section {
-				padding:7rem 2rem;
+				padding:2rem 2rem;
+			}
+
+			.firstsection {
+				padding-top: 7rem;
 			}
 
 			.tools {
@@ -240,7 +297,7 @@
 			}
 
 			h2 {
-				font-size:3rem;
+				font-size:2.3rem;
 				margin-bottom: 1rem;
 			}
 
@@ -250,17 +307,25 @@
 			}
 			.madefor {
 				text-align: center;
-				font-size: 1.7rem;
+				font-size: 1.5rem;
 				margin-top: 2rem;
 				font-weight: 300;
 			}
 			.grid {
-				margin: 2.5rem -2rem;
+				margin: 2.5rem 0rem;
 			}
 			.grid img {
 				max-height: 5rem;
 			}
 
+		}
+
+		i {
+			width: 2.5rem;
+		}
+
+		.fa-road-barrier {
+			font-size: 1.6rem;
 		}
  
 	</style>
@@ -286,45 +351,55 @@
 			<span class="char">l</span>
 		</div>
 		<div class="menu-right">
-			<a href="#">Delen</a>
-			<a href="#">Contact</a>
+			<!-- <a href="#">Delen</a>-->
+			<div class="text"><a href="mailto:thomas@naamkomtnog.nl">Contact</a></div>
 		</div>
 	</header>
-	<section>
+	<section class="firstsection">
 		<div class="text">
 			<h1>Gebruiksvriendelijke <br>digitale oplossingen</h1>
 		<div class="content section1-content">
 			<div class="keuzes">
-					<a href="#">
-						<h2>De diepte in</h2>
-						<p>Onderzoek en klantanalyse</p>
-					</a>
-										<a href="#">
+					<div class="container">
+						<div class="step"></div>
+						<a href="#">
+							<h2>Onderzoek en klantanalyse</h2>
+						</a>
+					</div>
+					<div class="container">
+						<div class="step"></div>
+						<a href="#">
 						<h2>Nieuwe klanten bereiken</h2>
-						<p>Onderzoek en klantanalyse</p>
-					</a>
-										<a href="#">
-						<h2>Meer halen uit bestaande klanten</h2>
-						<p>Onderzoek en klantanalyse</p>
-					</a>
-										<a href="#">
+						</a>
+					</div>
+					<div class="container">
+						<div class="step"></div>
+						<a href="#">
+						<h2>Haal meer uit bestaande klanten</h2>
+						</a>
+					</div>
+					<div class="container">
+						<div class="step"></div>
+						<a href="#">
 						<h2>Het juiste personeel werven</h2>
-						<p>Onderzoek en klantanalyse</p>
-					</a>
+						</a>
+					</div>
 
 			</div>
 			<div class="text">
-				<h2 class="madefor">Digitale oplossingen geleverd voor:</h3>
+				<h2 class="madefor">Apps, Websites, Videos en Teksten gemaakt voor:</h3>
 				<div class="grid">
 					<img src="clients/hema.svg"/>
 					<img src="clients/blokker.svg"/>
-					<img src="clients/jde.svg"/>
+					<img src="clients/de.jpeg"/> <!-- DE ipv jde -->
 					<img src="clients/kwikfit.svg"/>
 					<img src="clients/sanoma.svg"/>
 					<img src="clients/zeeman.svg"/>
 					<img src="clients/we.svg"/>
 					<!-- jaarbeursk, Shoeby? -->
 					<img src="clients/hunkemoller.svg"/>
+					<img src="clients/jaarbeurs.svg"/>
+
 
 				</div>
 
@@ -333,66 +408,50 @@
 			</div>
 		</div>
 	</section>
-		<section style="background:#fff;">
-		<div>
-		<h2>Experience</h2>
-		<div class="content section1-content">
-			<div>
-				<p>I've worked with a divserse client base, from small-scale local startups to market-leading national brands. In these roles I've gained extensive experience with:
-					<ul>
-						<li>Juggling multiple projects with upcoming deadlines</li>
-						<li>Closely cooperating with developers, designers and product owners in SCRUM development cycles</li>
-					</ul>
-				</p>
-		
-				<div class="previous-jobs">
-					<div class="job">
-						<div class="job-left">
-							<h4>Reto</h4>
-							<p>Designer & Frontend Developer</p>
-						</div>
-						<div class="job-right">
-							<p>2019 - now</p>
-						</div>
-					</div>
-					<div class="job">
-						<div class="job-left">
-							<h4>Magnus</h4>
-							<p>Designer & Frontend Developer</p>
-						</div>
-						<div class="job-right">
-							<p>2015 - 2019</p>
-						</div>
-					</div>
-					<div class="job">
-						<div class="job-left">
-							<h4>Freelance</h4>
-							<p>Web Designer & Developer</p>
-						</div>
-						<div class="job-right">
-							<p>2010 - 2015</p>
-						</div>
-					</div>
-					<div class="job">
-						<div class="job-left">
-							<h4>Hull School of Art & Design</h4>
-							<p>BA Graphic Design</p>
-						</div>
-						<div class="job-right">
-							<p>2007 - 2010</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="text">
-				<h3 class="clients">Clients</h3>
-				
+	<section>
+		<h2>Onderzoek</h2>
+		<h3><i class="fa-solid fa-user"></i> Klantanalyse</h3>
+		<p>Customer journey</p>
+		<h3><i class="fa-solid fa-chart-line"></i> Concurrentieanalyse</h3>
+		<h3><i class="fa-solid fa-road-barrier"></i> Obstakels definiëren</h3>
 
-			</div>
-
-			</div>
-		</div>
 	</section>
+	<section>
+		<h2>Nieuwe klanten bereiken</h2>
+		<p>Wij komen met out-of-the-box oplossingen om in jouw groeipotentie te tappen</p>
+
+		<h3><i class="fa-solid fa-square"></i> Op maat gemaakte app</h3>
+		<h3><i class="fa-solid fa-earth-europe"></i> Internationale landingspagina</h3>
+		<h3><i class="fa-solid fa-person-chalkboard"></i> Geanimeerde pitch</h3>
+
+	</section>
+
+	<section>
+		<h2>Meer halen uit bestaande klanten</h2>
+		<p>Het kost meer om een nieuwe klant te werven dan een klant te behouden!</p>
+
+		<h3><i class="fa-solid fa-envelope-open-text"></i> Creatieve e-mail campagne</h3>
+		<h3><i class="fa-solid fa-film"></i> Video presentatie</h3>
+		<h3><i class="fa-solid fa-users-rays"></i> Omnichannel oplossingen</h3>
+
+	</section>
+
+	<section>
+		<h2>Het juiste personeel werven</h2>
+		<p>Een digitaal visitekaartje is belangrijker dan ooit</p>
+		<div class="videocontainer">
+			<video autoplay muted playsinline loop> <source src="/Users/thomas/Documents/!Designs/033/3werven/postits.mp4"></video>
+			<h3>Overtuig met een bedrijfsindruk</h3>
+		</div>
+
+		<h3>Laat je bedrijfscultuur spreken</h3>
+		<p>Humor, tradities</p>
+
+		<h3>Maak solliciteren makkelijk</h3>
+
+	</section>
+
+
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
@@ -401,14 +460,14 @@
 
 		gsap.from(".char", {y: '50%', duration:.5, stagger: 0.08, opacity: 0, ease: "slow(0.7,0.7,false)" })
 
-			// gsap.from(".text > *", { opacity: 0, duration: .3, stagger: .5, delay: .5, y: 15 })
-			// let section2 = gsap.timeline({
-			// 	scrollTrigger: {
-			// 		trigger: '.section2',
-			// 		start: 'center bottom',
-			// 		end: '+=300'
-			// 	}
-			// })
+			gsap.from(".text > *", { opacity: 0, duration: .5, stagger: .5, delay: .5, y: 30 })
+			let section2 = gsap.timeline({
+				scrollTrigger: {
+					trigger: '.section2',
+					start: 'center bottom',
+					end: '+=300'
+				}
+			})
 			
 
 
