@@ -147,8 +147,12 @@
 		}
 		h3 {
 			font-size:1.8rem;
-			margin-top: 4rem;
-			margin-bottom: 2rem;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+			  background: -webkit-linear-gradient(45deg, #005A93, #00A384);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 		}
 		p {
 			margin-top: 1rem;
@@ -200,21 +204,53 @@
 
 		h1 {
 			font-size: 2.4rem;
-			margin-bottom: 2rem;
+			margin-bottom: 4rem;
 			font-weight: 300;
 			letter-spacing: .07rem;
+			position: relative;
+			z-index: 9;
+			color: #fff;
 		}
 
 		.keuzes {
 			font-size: 1.8rem;
 			line-height: 130%;
 			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			margin-top: 3rem;
+			width: calc(100% + 4rem);
+			margin: 0 -2rem;
+			padding: 2rem 2rem 4rem 2rem;
+			position: relative;
+			overflow-y: hidden;
 		}
+		.keuzes h1 {
+			filter: drop-shadow(0 0 25px rgba(0,0,0,0.7)) drop-shadow(0 0 50px rgba(0,0,0,0.7));
+will-change: filter;
+		}
+
+		.keuzes a {
+			filter: drop-shadow(0 0 25px rgba(0,0,0,0.7)) drop-shadow(0 0 50px rgba(0,0,0,0.7)) ;
+will-change: filter;
+		}
+
+
+		.keuzes video {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+height: 100%;
+			z-index: 2;
+
+			object-fit: cover;
+			object-position: center center;
+
+		}
+
 		.keuzes .container {
 			display: flex;
+			display: flex;
+z-index: 9;
+position: relative;
 		}
 
 
@@ -226,7 +262,9 @@
 		}
 		.keuzes a p {
 			margin: 0;
-		
+		}
+		.keuzes a {
+			color: #fff;
 		}
 
 		.researchintro {
@@ -245,10 +283,13 @@
 
 		}
 
+
 		.videocontainer h3 {
 			margin: 0;
 			position: absolute;
 			color: #fff;
+			background: none;
+			-webkit-text-fill-color: white;
 			width: 100%;
 			z-index: 999;
 			text-align: center;
@@ -256,6 +297,7 @@
 			transform: translateY(-50%);
 			filter: drop-shadow(0 0 25px rgba(0,0,0,0.5)) drop-shadow(0 0 50px rgba(0,0,0,0.5)) drop-shadow(0 0 50px rgba(0,0,0,0.5)) drop-shadow(0 0 10px rgba(0,0,0,0.5));
 will-change: filter;
+display: block;
 		}
 
 		video {
@@ -303,7 +345,7 @@ will-change: filter;
 			}
 
 			.firstsection {
-				padding-top: 7rem;
+				padding-top: 6rem;
 			}
 
 			.tools {
@@ -357,6 +399,7 @@ will-change: filter;
 </head>
 <body>
 	<header>
+		<a href="https://www.naamkomtnog.nl" style="color:#000;">
 		<div class="logo">
 			<span class="char">N</span>
 			<span class="char">a</span>
@@ -374,17 +417,19 @@ will-change: filter;
 			<span class="char">.</span>
 			<span class="char">n</span>
 			<span class="char">l</span>
-		</div>
+		</div></a>
 		<div class="menu-right">
 			<!-- <a href="#">Delen</a>-->
-			<div class="text"><a href="mailto:thomas@naamkomtnog.nl">Contact</a></div>
+			<div class="text"><a href="mailto:thomas@naamkomtnog.nl" style="font-weight:bold">Contact</a></div>
 		</div>
 	</header>
 	<section class="firstsection">
 		<div class="text">
-			<h1>Gebruiksvriendelijke <br>digitale oplossingen</h1>
 		<div class="content section1-content">
 			<div class="keuzes">
+							<h1>Gebruiksvriendelijke <br>digitale oplossingen</h1>
+
+			<video autoplay muted playsinline loop> <source src="paint.mp4"></video>
 					<div class="container">
 						<div class="step"></div>
 						<a href="#onderzoek">
@@ -433,23 +478,23 @@ will-change: filter;
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="onderzoek">
 		<h2 id="onderzoek">Onderzoek</h2>
 		<h3><i class="fa-solid fa-user"></i> Klantanalyse</h3>
 		<p>Wij verplaatsen ons in jullie klanten met behulp van customer journeys en persona's.</p>
-		<h3><i class="fa-solid fa-chart-line"></i> Concurrentieanalyse</h3>
+		<h3 class="onderzoekanimate"><i class="fa-solid fa-chart-line"></i> Concurrentieanalyse</h3>
 		<p>Wat doen jullie concurrenten beter, en waar kunnen jullie je in onderscheiden?</p>
 		<h3><i class="fa-solid fa-road-barrier"></i> Obstakels definiëren</h3>
 		<p>Waar zitten de pijnpunten? Kloppen jullie veronderstellingen wel?</p>
 
 
 	</section>
-	<section>
+	<section class="nieuwe">
 		<h2 id="nieuwe">Nieuwe klanten bereiken</h2>
 		<p>Verzilver jullie groeipotentieel met een out-of-the-box oplossing</p>
 
 		<h3><i class="fa-solid fa-mobile-button"></i> Op maat gemaakte app</h3>
-		<p>Precies voor jullie doeleinden, afgestemd op jullie klanten.
+		<p class="nieuweanimate">Precies voor jullie doeleinden, afgestemd op jullie klanten.
 		<div class="example app">
 			<img src="app.jpg"/>
 		</div>
@@ -460,11 +505,11 @@ will-change: filter;
 
 	</section>
 
-	<section>
+	<section class="meer">
 		<h2 id="meer">Meer halen uit bestaande klanten</h2>
 		<p>Omdat het meer kost om een nieuwe klant te werven dan een klant te behouden.</p>
 
-		<h3><i class="fa-solid fa-envelope-open-text"></i> Creatieve e-mail campagne</h3>
+		<h3 class="meeranimate"><i class="fa-solid fa-envelope-open-text"></i> Creatieve e-mail campagne</h3>
 		<p>Minder dan 20% van e-mails wordt gelezen. Wij weten hoe jullie de aandacht van de klanten vast kunnen houden.
 		<h3><i class="fa-solid fa-film"></i> Video presentatie</h3>
 		<p>Belicht wat jullie bedrijf uniek maakt en overtuig de klant met krachtige beelden.</p>
@@ -473,18 +518,17 @@ will-change: filter;
 
 	</section>
 
-	<section>
+	<section class="werven">
 		<h2 id="werven">Het juiste personeel werven</h2>
-		<p>Droge vacatureteksten behoren tot het verleden. Overtuig toekomstige collega's met een gezellige visuele indruk van jullie werkplek.</p>
+		<p class="wervenanimate">Droge vacatureteksten behoren tot het verleden. Overtuig toekomstige collega's met een gezellige visuele indruk van jullie werkplek.</p>
 		<div class="videocontainer">
 			<video autoplay muted playsinline loop> <source src="post-its.mp4"></video>
 			<h3>Overtuig met een gezellige bedrijfsindruk</h3>
 		</div>
 
-		<h3>Laat je bedrijfscultuur spreken</h3>
-		<p>Humor, tradities</p>
+		<h3>Laat jullie bedrijfscultuur spreken</h3>
+		<p>Wie zijn jullie? Wat is jullie missie en visie? Geef een kijkje in de keuken.</p>
 
-		<h3>Maak solliciteren makkelijk</h3>
 
 	</section>
 	<section>
@@ -506,11 +550,34 @@ will-change: filter;
 			gsap.from(".text > *", { opacity: 0, duration: .5, stagger: .5, delay: .5, y: 30 })
 			let section2 = gsap.timeline({
 				scrollTrigger: {
-					trigger: '.section2',
+					trigger: 'section2',
 					start: 'center bottom',
 					end: '+=300'
 				}
 			})
+
+						gsap.from(".onderzoek > *", {
+  scrollTrigger: ".onderzoekanimate", // start the animation when ".box" enters the viewport (once)
+  y: '100%', duration:.5, stagger: 0.08, opacity: 0, ease: "slow(0.7,0.7,false)"
+});
+
+												gsap.from(".nieuwe > *", {
+  scrollTrigger: ".nieuweanimate", // start the animation when ".box" enters the viewport (once)
+  y: '100%', duration:.5, stagger: 0.08, opacity: 0, ease: "slow(0.7,0.7,false)"
+});
+		
+														gsap.from(".meer > *", {
+  scrollTrigger: ".meeranimate", // start the animation when ".box" enters the viewport (once)
+  y: '100%', duration:.5, stagger: 0.08, opacity: 0, ease: "slow(0.7,0.7,false)"
+});
+
+gsap.from(".werven > *", {
+  scrollTrigger: ".wervenanimate", // start the animation when ".box" enters the viewport (once)
+  y: '100%', duration:.5, stagger: 0.08, opacity: 0, ease: "slow(0.7,0.7,false)"
+});
+
+
+		
 			
 
 
