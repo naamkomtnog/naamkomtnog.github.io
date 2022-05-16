@@ -164,7 +164,7 @@
 		}
 		header {
 			display: flex;
-			width: calc(100% - 6rem);
+			width: calc(100% - 4rem);
 			justify-content: space-between;
 			align-items: flex-start;
 			background: #fff;
@@ -194,21 +194,18 @@
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+		}
+
+
+		.keuzes a h2 {
+			margin: 0;
 			margin-top: 2rem;
+			margin-bottom: .5rem;
+			font-size: 2.2rem;
 		}
-
-		.keuzes li {
-			margin-top: 0;
-			margin-bottom: 1.5rem;
-		}
-
-
-		.keuzes li a {
-			background: var(--blue);
-			padding: 0.7rem 2rem;
-			color: #fff;
-			display: inline-block;
-			font-weight: 700;
+		.keuzes a p {
+			margin: 0;
+		
 		}
 
 
@@ -232,7 +229,7 @@
 				flex-direction:column;
 			}
 			section {
-				padding:7rem 3rem;
+				padding:7rem 2rem;
 			}
 
 			.tools {
@@ -296,15 +293,25 @@
 	<section>
 		<div class="text">
 			<h1>Gebruiksvriendelijke <br>digitale oplossingen</h1>
-		<h2>Wat wil je?</h2>
 		<div class="content section1-content">
-			<div>
-				<ul class="keuzes">
-					<li><a href="#">Meer klanten krijgen</a></li>
-					<li><a href="#">Meer halen uit bestaande klanten</a></li>
-					<li><a href="#">Meer personeel</a></li>
-					<li><a href="#">Interne verbeteringen</a></li>
-				</ul>
+			<div class="keuzes">
+					<a href="#">
+						<h2>De diepte in</h2>
+						<p>Onderzoek en klantanalyse</p>
+					</a>
+										<a href="#">
+						<h2>Nieuwe klanten bereiken</h2>
+						<p>Onderzoek en klantanalyse</p>
+					</a>
+										<a href="#">
+						<h2>Meer halen uit bestaande klanten</h2>
+						<p>Onderzoek en klantanalyse</p>
+					</a>
+										<a href="#">
+						<h2>Het juiste personeel werven</h2>
+						<p>Onderzoek en klantanalyse</p>
+					</a>
+
 			</div>
 			<div class="text">
 				<h2 class="madefor">Digitale oplossingen geleverd voor:</h3>
