@@ -30,6 +30,15 @@
   			font-size: 2rem;	
   		}
 
+  		.example img {
+  			max-width: 100%;
+  			max-height: 40rem;
+  		}
+
+  		.app img {
+  			margin-left: 2rem;
+  		}
+
 
 
 		h1, h2, h3, h4, h5, h6, .logo {
@@ -138,6 +147,11 @@
 		}
 		h3 {
 			font-size:1.8rem;
+			margin-top: 4rem;
+			margin-bottom: 2rem;
+		}
+		p {
+			margin-top: 1rem;
 		}
 		h2 {
 			font-size:9rem;
@@ -232,17 +246,20 @@
 		}
 
 		.videocontainer h3 {
+			margin: 0;
 			position: absolute;
-			color: var(--blue);
+			color: #fff;
 			width: 100%;
 			z-index: 999;
 			text-align: center;
 			top: 50%;
-			transform: translateY(-100%);
+			transform: translateY(-50%);
+			filter: drop-shadow(0 0 25px rgba(0,0,0,0.5)) drop-shadow(0 0 50px rgba(0,0,0,0.5)) drop-shadow(0 0 50px rgba(0,0,0,0.5)) drop-shadow(0 0 10px rgba(0,0,0,0.5));
+will-change: filter;
 		}
 
 		video {
-			opacity: 0.5;
+			opacity: 1;
 			width: 100%;
 			margin: 0;
 			padding: 0;
@@ -321,12 +338,20 @@
 		}
 
 		i {
-			width: 2.5rem;
+			width: 2.8rem;
+			font-size: 2.3rem;
+			vertical-align: middle;
 		}
 
 		.fa-road-barrier {
-			font-size: 1.6rem;
+			font-size: 1.8rem;
 		}
+
+		.fa-person-chalkboard {
+			font-size: 2rem;
+		}
+
+
  
 	</style>
 </head>
@@ -362,25 +387,25 @@
 			<div class="keuzes">
 					<div class="container">
 						<div class="step"></div>
-						<a href="#">
+						<a href="#onderzoek">
 							<h2>Onderzoek en klantanalyse</h2>
 						</a>
 					</div>
 					<div class="container">
 						<div class="step"></div>
-						<a href="#">
+						<a href="#nieuwe">
 						<h2>Nieuwe klanten bereiken</h2>
 						</a>
 					</div>
 					<div class="container">
 						<div class="step"></div>
-						<a href="#">
-						<h2>Haal meer uit bestaande klanten</h2>
+						<a href="#meer">
+						<h2>Meer halen uit bestaande klanten</h2>
 						</a>
 					</div>
 					<div class="container">
 						<div class="step"></div>
-						<a href="#">
+						<a href="#werven">
 						<h2>Het juiste personeel werven</h2>
 						</a>
 					</div>
@@ -409,39 +434,51 @@
 		</div>
 	</section>
 	<section>
-		<h2>Onderzoek</h2>
+		<h2 id="onderzoek">Onderzoek</h2>
 		<h3><i class="fa-solid fa-user"></i> Klantanalyse</h3>
-		<p>Customer journey</p>
+		<p>Wij verplaatsen ons in jullie klanten met behulp van customer journeys en persona's.</p>
 		<h3><i class="fa-solid fa-chart-line"></i> Concurrentieanalyse</h3>
+		<p>Wat doen jullie concurrenten beter, en waar kunnen jullie je in onderscheiden?</p>
 		<h3><i class="fa-solid fa-road-barrier"></i> Obstakels definiëren</h3>
+		<p>Waar zitten de pijnpunten? Kloppen jullie veronderstellingen wel?</p>
+
 
 	</section>
 	<section>
-		<h2>Nieuwe klanten bereiken</h2>
-		<p>Wij komen met out-of-the-box oplossingen om in jouw groeipotentie te tappen</p>
+		<h2 id="nieuwe">Nieuwe klanten bereiken</h2>
+		<p>Verzilver jullie groeipotentieel met een out-of-the-box oplossing</p>
 
-		<h3><i class="fa-solid fa-square"></i> Op maat gemaakte app</h3>
+		<h3><i class="fa-solid fa-mobile-button"></i> Op maat gemaakte app</h3>
+		<p>Precies voor jullie doeleinden, afgestemd op jullie klanten.
+		<div class="example app">
+			<img src="app.jpg"/>
+		</div>
 		<h3><i class="fa-solid fa-earth-europe"></i> Internationale landingspagina</h3>
+		<p>Richt je op klanten in heel Europa met een langsingspagina per land.</p>
 		<h3><i class="fa-solid fa-person-chalkboard"></i> Geanimeerde pitch</h3>
+		<p>Maak een verbluffende indruk met een professionele presentatie met hand-gemaakte animaties.</p>
 
 	</section>
 
 	<section>
-		<h2>Meer halen uit bestaande klanten</h2>
-		<p>Het kost meer om een nieuwe klant te werven dan een klant te behouden!</p>
+		<h2 id="meer">Meer halen uit bestaande klanten</h2>
+		<p>Omdat het meer kost om een nieuwe klant te werven dan een klant te behouden.</p>
 
 		<h3><i class="fa-solid fa-envelope-open-text"></i> Creatieve e-mail campagne</h3>
+		<p>Minder dan 20% van e-mails wordt gelezen. Wij weten hoe jullie de aandacht van de klanten vast kunnen houden.
 		<h3><i class="fa-solid fa-film"></i> Video presentatie</h3>
+		<p>Belicht wat jullie bedrijf uniek maakt en overtuig de klant met krachtige beelden.</p>
 		<h3><i class="fa-solid fa-users-rays"></i> Omnichannel oplossingen</h3>
+		<p>Blijf up-to-date met de technologie en spreek klanten aan via nieuwe kanalen die naadloos geïntegreerd zijn.
 
 	</section>
 
 	<section>
-		<h2>Het juiste personeel werven</h2>
-		<p>Een digitaal visitekaartje is belangrijker dan ooit</p>
+		<h2 id="werven">Het juiste personeel werven</h2>
+		<p>Droge vacatureteksten behoren tot het verleden. Overtuig toekomstige collega's met een gezellige visuele indruk van jullie werkplek.</p>
 		<div class="videocontainer">
 			<video autoplay muted playsinline loop> <source src="/Users/thomas/Documents/!Designs/033/3werven/postits.mp4"></video>
-			<h3>Overtuig met een bedrijfsindruk</h3>
+			<h3>Overtuig met een gezellige bedrijfsindruk</h3>
 		</div>
 
 		<h3>Laat je bedrijfscultuur spreken</h3>
@@ -449,6 +486,12 @@
 
 		<h3>Maak solliciteren makkelijk</h3>
 
+	</section>
+	<section>
+		<h2>Interesse?</h2>
+		<p>Neem contact op voor een vrijblijvend gesprek.</p>
+		<a href="mailto:thomas@naamkomtnog.nl">thomas@naamkomtnog.nl</a><br/>
+		<a href="tel:+31617036354" style="margin-top:1rem;display:block;margin-bottom:5rem;">06 170 363 54</a>
 	</section>
 
 
