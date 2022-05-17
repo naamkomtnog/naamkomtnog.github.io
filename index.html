@@ -107,7 +107,7 @@
    		}
 
 		.space {
-			width:10px;
+			width:8px;
 		}
 
 		p {
@@ -119,6 +119,7 @@
 			width:100%;
 			justify-content: space-between;
 			gap:15rem;
+			flex-direction: column;
 
 		}
 
@@ -129,7 +130,6 @@
 		section {
 			text-align:left;
 			padding:10rem;
-			max-width:140rem;
 			margin:0 auto;
 
 		}
@@ -161,7 +161,7 @@
 			margin-top: 1rem;
 		}
 		h2 {
-			font-size:9rem;
+			font-size:4rem;
 		}
 
 		h4 {
@@ -224,6 +224,10 @@
 			padding: 2rem 2rem 4rem 2rem;
 			position: relative;
 			overflow-y: hidden;
+		}
+		.keuzes .inner {
+			max-width: 120rem;
+			margin: 0 auto;
 		}
 		.keuzes h1 {
 			filter: drop-shadow(0 0 25px rgba(0,0,0,0.7)) drop-shadow(0 0 50px rgba(0,0,0,0.7));
@@ -323,7 +327,63 @@ display: block;
 			opacity: 0.4;
 		}
 
+		@media (min-width: 1000px) {
+			.videocontainer h3 {
+				font-size: 3rem;
+			}
+			.section1-content {
+				gap: 3rem;
+			}
+			h1 {
+				font-size: 5.4rem;
+				margin-top: 0;
+			}
+			h2 {
+				font-size: 3rem;
+			}
+			.keuzes a h2 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+			}
+						section.firstsection {
+						padding-left: 0rem;
+						padding-right: 0;
+						padding-top: 6rem;
+						max-width: 100%;
+					}
+					section {
+						max-width: 120rem;
+						margin: 0 auto;
+					}
+					.keuzes 
+					.section1-content {
+						flex-direction: column;
+					}
+					.madefor {
+						font-size: 2rem;
+						font-weight: 400;
+							text-align: center;
 
+					}
+					.grid {
+									grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+									transform: none;
+									opacity: 0.5;
+									margin: 3rem auto;
+									gap: 2rem;
+			max-width:120rem;
+
+					}
+					.keuzes {
+						padding: 10rem 2rem 10rem 2rem;
+					}
+					.text {
+					}
+					section {
+						padding: 2rem;
+					}
+
+		}
 
 		@media (max-width:1000px) {
 			body {
@@ -432,9 +492,12 @@ display: block;
 		<div class="text">
 		<div class="content section1-content">
 			<div class="keuzes">
-							<h1>Gebruiksvriendelijke <br>digitale oplossingen</h1>
+							<video autoplay muted playsinline loop> <source src="paint.mp4"></video>
 
-			<video autoplay muted playsinline loop> <source src="paint.mp4"></video>
+				<div class="inner">
+				
+				<h1>Gebruiksvriendelijke <br>digitale oplossingen</h1>
+
 					<div class="container">
 						<div class="step"></div>
 						<a href="#onderzoek">
@@ -459,7 +522,7 @@ display: block;
 						<h2>Het juiste personeel werven</h2>
 						</a>
 					</div>
-
+</div>
 			</div>
 			<div class="text">
 				<h2 class="madefor">Apps, Websites, Videos en Teksten gemaakt voor:</h3>
